@@ -1,51 +1,7 @@
 @extends('layouts.master')
 @section('title','Home')
 @section('content')
-    <!-- Support Area Start Here -->
-        <div class="support-area  ptb-30">
-            <div class="container">
-                <div class="d-flex flex-wrap justify-content-md-between justify-content-sm-start">
-                    <div class="single-support d-flex align-items-center">
-                        <div class="support-icon">
-                            <img src="img/support/s1.png" alt="support-icon">
-                        </div>
-                        <div class="support-desc">
-                            <h6>Free shipping item</h6>
-                            <span>For all orders over $500</span>
-                        </div>
-                    </div>
-                    <div class="single-support d-flex align-items-center">
-                        <div class="support-icon">
-                            <img src="img/support/s2.png" alt="support-icon">
-                        </div>
-                        <div class="support-desc">
-                            <h6>Money back guarantee</h6>
-                            <span>100% money back guarante</span>
-                        </div>
-                    </div>
-                    <div class="single-support d-flex align-items-center">
-                        <div class="support-icon">
-                            <img src="img/support/s3.png" alt="support-icon">
-                        </div>
-                        <div class="support-desc">
-                            <h6>Cash on delivery</h6>
-                            <span>Lorem ipsum dolor amet</span>
-                        </div>
-                    </div>
-                    <div class="single-support d-flex align-items-center">
-                        <div class="support-icon">
-                            <img src="img/support/s4.png" alt="support-icon">
-                        </div>
-                        <div class="support-desc">
-                            <h6>Help & Support</h6>
-                            <span>Call us : + 0123.4567.89</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Container End -->
-        </div>
-        <!-- Support Area End Here -->
+    
         <!-- Slider Area Start -->
         <div class="slider-area slider-style-two">
             <div class="container">
