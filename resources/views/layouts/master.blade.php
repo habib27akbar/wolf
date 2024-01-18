@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     <!-- Responsive csss -->
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-
+    @yield('css')
     <!-- Modernizer js -->
     <script src="{{ asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
 </head>
@@ -73,4 +73,5 @@
     <script src="{{ asset('js/plugins.js') }}"></script>
     <!-- Main activaion js -->
     <script src="{{ asset('js/main.js') }}"></script>
+    @yield('js')
 </body>

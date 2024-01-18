@@ -6,82 +6,32 @@
                         <!-- Categorie Search Box Start Here -->
                         <div class="col-xl-3 col-lg-4 col-md-12 order-3 order-lg-1">
                             <div class="categorie-search-box">
-                                <form action="#">
+                                {{-- <form action="#">
                                     <input type="text" name="search" placeholder="Search entire store here...">
                                     <button><span class="pe-7s-search"></span></button>
-                                </form>
+                                </form> --}}
                             </div>
                         </div>
                         <!-- Categorie Search Box End Here -->
                         <!-- Logo Start -->
                         <div class="col-xl-6 col-lg-4 col-md-5 col-sm-12 order-1 order-lg-2">
                             <div class="logo text-center text-md-start text-lg-center mt-sm-35">
-                                <a href="index.html"><img src="img/logo/logo.png" alt="logo-image"></a>
+                                <a href="index.html"><img src="{{ asset('img/logo/logo-wolf-sementara.jpg') }}" alt="logo-image"></a>
                             </div>
                         </div>
                         <!-- Logo End -->
                         <!-- Cart Box Start Here -->
                         <div class="col-xl-3 col-lg-4 col-md-5  col-sm-7 order-2 order-lg-3">
                             <div class="cart-box">
-                                <ul class="d-flex justify-content-sm-between  align-items-center">
-                                    <li>
-                                        <ul class="wish-compare-items">
-                                            <li><a class="wishlist" href="wishlist.html">my wishlist</a></li>
-                                            <li><a class="compare" href="compare.html">my compare</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="img/vertical-menu/icon_cart.png" alt="cart-icon"><span class="total-pro">2</span><span class="my-cart"><span>my cart</span></span>
-                                        </a>
-                                        <ul class="ht-dropdown cart-box-width">
-                                            <li>
-                                                <!-- Cart Box Start -->
-                                                <div class="single-cart-box">
-                                                    <div class="cart-img">
-                                                        <a href="#"><img src="img/products/p1.jpg" alt="cart-image"></a>
-                                                        <span class="pro-quantity">1X</span>
-                                                    </div>
-                                                    <div class="cart-content">
-                                                        <h6><a href="product.html">Printed Summer Red </a></h6>
-                                                        <span class="cart-price">27.45</span>
-                                                        <span>Size: S</span>
-                                                        <span>Color: Yellow</span>
-                                                    </div>
-                                                    <a class="del-icone" href="#"><i class="ion-close"></i></a>
-                                                </div>
-                                                <!-- Cart Box End -->
-                                                <!-- Cart Box Start -->
-                                                <div class="single-cart-box">
-                                                    <div class="cart-img">
-                                                        <a href="#"><img src="img/products/p2.jpg" alt="cart-image"></a>
-                                                        <span class="pro-quantity">1X</span>
-                                                    </div>
-                                                    <div class="cart-content">
-                                                        <h6><a href="product.html">Printed Round Neck</a></h6>
-                                                        <span class="cart-price">45.00</span>
-                                                        <span>Size: XL</span>
-                                                        <span>Color: Green</span>
-                                                    </div>
-                                                    <a class="del-icone" href="#"><i class="ion-close"></i></a>
-                                                </div>
-                                                <!-- Cart Box End -->
-                                                <!-- Cart Footer Inner Start -->
-                                                <div class="cart-footer">
-                                                    <ul class="price-content">
-                                                        <li>Subtotal <span>$57.95</span></li>
-                                                        <li>Shipping <span>$7.00</span></li>
-                                                        <li>Taxes <span>$0.00</span></li>
-                                                        <li>Total <span>$64.95</span></li>
-                                                    </ul>
-                                                    <div class="cart-actions text-center">
-                                                        <a class="cart-checkout" href="checkout.html">Checkout</a>
-                                                    </div>
-                                                </div>
-                                                <!-- Cart Footer Inner End -->
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                <div class="single-support d-flex align-items-center">
+                                    <div class="support-icon">
+                                        <img src="{{ asset('img/support/s4.png') }}" alt="support-icon">
+                                    </div>
+                                    <div class="support-desc">
+                                        <h6>Help & Support</h6>
+                                        <span>Call us : + 0123.4567.89</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- Cart Box End Here -->
@@ -91,17 +41,9 @@
                     <div class="mobile-menu d-block d-lg-none">
                         <nav>
                             <ul>
-                                <li><a href="index.html">home</a>
-                                    <!-- Home Version Dropdown Start -->
-                                    <ul>
-                                        <li><a href="index.html">Home Version 1</a></li>
-                                        <li><a href="home-2.html">Home Version 2</a></li>
-                                        <li><a href="home-3.html">Home Version 3</a></li>
-                                        <li><a href="home-4.html">Home Version 4</a></li>
-                                        <li><a href="home-5.html">Home Version 5</a></li>
-                                        <li><a href="home-6.html">Home Version 6</a></li>
-                                    </ul>
-                                    <!-- Home Version Dropdown End -->
+                                <li>
+                                    <a href="{{ route('home') }}">home</a>
+                                   
                                 </li>
                                 <li><a href="#">furniture</a>
                                     <!-- Men Accessories Dropdown Start -->
