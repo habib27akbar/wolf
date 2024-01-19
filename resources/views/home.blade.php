@@ -986,34 +986,34 @@
         <div class="new-arrival no-border-style ptb-90">
             <div class="container">
                 <!-- Section Title Start -->
-                <div class="section-title text-center">
+                <div class="section-title text-center" style="margin-bottom: 0;">
                     <h2>our reference company</h2>
                     
                 </div>
                 <!-- Section Title End -->
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="pro-img">
                             <img src="{{ asset('img/client/trafindo.png') }}" class="image" alt="client-logo">
                             
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="pro-img">
                             <img src="{{ asset('img/client/wilmar.png') }}" class="image" alt="client-logo">
                             
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="pro-img">
                             <img src="{{ asset('img/client/mitrapack.png') }}" class="image" alt="client-logo">
                             
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="pro-img">
                             <img src="{{ asset('img/client/sinde.jpeg') }}" class="image" alt="client-logo">
                             
