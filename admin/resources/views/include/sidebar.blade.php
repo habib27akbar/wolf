@@ -34,6 +34,36 @@
             </a>
            
           </li>
+
+           <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file"></i>
+              <p>
+                Master
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../../index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Kategori Produk</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="{{ route('slider.index') }}" class="nav-link {{ Route::currentRouteName() == 'slider.index' ? 'active' : '' }}">
+              <i class="nav-icon fas fa-images"></i>
+              <p>
+                Slider
+              </p>
+            </a>
+           
+          </li>
           
         </ul>
       </nav>
