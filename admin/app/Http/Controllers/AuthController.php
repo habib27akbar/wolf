@@ -19,10 +19,11 @@ class AuthController extends Controller
         $credentials = $request->only('username', 'password');
 
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('/');
+            $request->session()->regenerate();
+            return redirect()->intended('/home');
         }
 
-        return back()->with('loginError', 'Login Failed!');
+        return back()->with('alert-danger', 'Login Failed!');
     }
 
     public function form_regist()

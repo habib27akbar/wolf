@@ -20,8 +20,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/form_login', [AuthController::class, 'form_login'])->middleware('guest')->name('login');
-Route::post('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/login', [AuthController::class, 'form_login'])->middleware('guest')->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('authenticate');
 Route::get('/register', [AuthController::class, 'form_regist']);
 Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
