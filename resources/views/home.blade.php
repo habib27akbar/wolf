@@ -49,7 +49,7 @@
                     
                 </div>
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-md-8">
                         <p>PT. Dwitunggal Sinar Sentosa berdiri pada tahun 2011
                         bisnis kami bergerak dalam bidang hemat energi,
                         melalui penjualan berbagai jenis Lampu LED dan
@@ -77,8 +77,8 @@
                                 krisis energi di Indonesia.</p>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <img  src="{{ asset('img/products/p6.jpg') }}" alt="" srcset="">
+                    <div class="col-md-3">
+                        <img  src="{{ asset('img/products/p6.jpg') }}" alt="" style="width:100%" srcset="">
                     </div>
                 </div>
             </div>

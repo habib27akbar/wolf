@@ -20,6 +20,7 @@
   <div class="card card-outline card-primary">
     
     <div class="card-body">
+       @include('include.alert')
       <p class="login-box-msg">Sign in to start your session</p>
 
       <form action="{{ route('authenticate') }}" method="POST">
