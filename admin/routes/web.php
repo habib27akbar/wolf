@@ -6,6 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KatalogController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductDetailController;
@@ -44,4 +45,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('certificate', CertificateController::class);
     Route::resource('product', ProductController::class);
     Route::resource('product_detail', ProductDetailController::class);
+    Route::resource('katalog', KatalogController::class);
 });

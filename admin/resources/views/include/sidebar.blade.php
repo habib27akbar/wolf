@@ -68,13 +68,31 @@
 
           
 
-        
+          <li class="nav-item">
+            <a href="{{ route('product.index') }}" class="nav-link {{ Route::currentRouteName() == 'product.index' ? 'active' : '' }}">
+              <i class="nav-icon fas fa-boxes"></i>
+              <p>
+                Product
+              </p>
+            </a>
+           
+          </li>
 
           <li class="nav-item">
             <a href="{{ route('slider.index') }}" class="nav-link {{ Route::currentRouteName() == 'slider.index' ? 'active' : '' }}">
               <i class="nav-icon fas fa-images"></i>
               <p>
                 Slider
+              </p>
+            </a>
+           
+          </li>
+
+          <li class="nav-item">
+            <a href="{{ route('katalog.index') }}" class="nav-link {{ Route::currentRouteName() == 'katalog.index' ? 'active' : '' }}">
+              <i class="nav-icon fas fa-file-pdf"></i>
+              <p>
+                Katalog
               </p>
             </a>
            
