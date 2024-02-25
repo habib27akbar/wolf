@@ -177,33 +177,15 @@
                 </div>
                 <!-- Section Title End -->
                 <div class="row">
-                    <div class="col-md-2">
-                        <div class="pro-img">
-                            <img src="{{ asset('img/client/trafindo.png') }}" class="image" alt="client-logo">
-                            
+                    @foreach($company as $key => $value)
+                        <div class="col-md-2">
+                            <div class="pro-img">
+                                <img src="admin/public/img/company/{{ $value['gambar'] }}" class="image" alt="client-logo">
+                                
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <div class="pro-img">
-                            <img src="{{ asset('img/client/wilmar.png') }}" class="image" alt="client-logo">
-                            
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <div class="pro-img">
-                            <img src="{{ asset('img/client/mitrapack.png') }}" class="image" alt="client-logo">
-                            
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <div class="pro-img">
-                            <img src="{{ asset('img/client/sinde.jpeg') }}" class="image" alt="client-logo">
-                            
-                        </div>
-                    </div>
+                    @endforeach
+                    
                 </div>
                 
                 
