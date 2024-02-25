@@ -49,18 +49,18 @@
                     
                 </div>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <p>PT. Dwitunggal Sinar Sentosa berdiri pada tahun 2011
                         bisnis kami bergerak dalam bidang hemat energi,
                         melalui penjualan berbagai jenis Lampu LED dan
                         Solar Cell (Tenaga Surya)</p>
                         <div style="margin-top: 10px">
-                            <h6 style="background-color: darkseagreen;">CONTROL OF QUALITY</h6>
+                            <b>CONTROL OF QUALITY</b>
                             <p>Perusahaan Kami melakukan layanan yang terbaik
                             terutama dalam proses manufaktur dan layanan purna jual.</p>
                         </div>
                         <div style="margin-top: 10px">
-                            <h6 style="background-color: darkseagreen;">Misi</h6>
+                            <b>Misi</b>
                             <p>PT Dwitunggal Sinar Sentosa Didedikasikan
                                 untuk solusi yang inovasi untuk masalah krisis
                                 energi didunia dan untuk membuat dunia lebih bersih
@@ -68,7 +68,7 @@
                                 terbaru untuk generasi kedepan yang lebih baik.</p>
                         </div>
                         <div style="margin-top: 10px">
-                            <h6 style="background-color: darkseagreen;">Visi</h6>
+                            <b>Visi</b>
                             <p>- Untuk menyediakan lingkungan yang lebih bersahabat
                                 dan diperbaharui.<br/>
                                 - Menyediakan service yang bermutu tinggi dan menyediakan
@@ -77,9 +77,7 @@
                                 krisis energi di Indonesia.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <img  src="{{ asset('img/products/p6.jpg') }}" alt="" style="width:100%" srcset="">
-                    </div>
+                    
                 </div>
             </div>
         </div>
