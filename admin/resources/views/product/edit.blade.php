@@ -35,7 +35,7 @@
                      @csrf
                      @method('PUT')
                     <div class="card-body">
-                        @csrf
+                        
                         <div class="form-group row">
                             <label for="file" class="col-sm-2 col-form-label">Product Name</label>
                             <div class="col-sm-10">

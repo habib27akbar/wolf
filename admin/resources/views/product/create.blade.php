@@ -40,60 +40,7 @@
                                 <input type="text" name="product_name" id="product_name" class="form-control" id="product_name" required>
                             </div>
                         </div>
-                        {{-- <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">Model</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="model" id="model" class="form-control" id="model" required>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">Size</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="size" id="size" class="form-control" id="size">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">Lumens</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="lumens" id="lumens" class="form-control" id="lumens">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">Power</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="power" id="power" class="form-control" id="power">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">Spec</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="spec" id="spec" class="form-control" id="spec">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">Color Temp</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="color_temp" id="color_temp" class="form-control" id="color_temp">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">CRI</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="cri" id="cri" class="form-control" id="cri">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">Driver</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="driver" id="driver" class="form-control" id="driver">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">Quality Warranty</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="quality_warranty" id="quality_warranty" class="form-control" id="quality_warranty">
-                            </div>
-                        </div> --}}
+                       
                         <div class="form-group row">
                             <label for="file" class="col-sm-2 col-form-label">Gambar</label>
                             <div class="col-sm-10">

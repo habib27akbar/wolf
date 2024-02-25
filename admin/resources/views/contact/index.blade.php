@@ -106,7 +106,7 @@
     <!-- /.content -->
   @endsection
   @section('js')
-    <!-- DataTables  & Plugins -->
+
     <!-- Summernote -->
     <script src="{{ asset('plugins/summernote/summernote-bs4.min.js') }}"></script>
     <script>

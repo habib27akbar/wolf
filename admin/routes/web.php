@@ -8,6 +8,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KatalogController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductDetailController;
 use App\Http\Controllers\ProductionController;
@@ -46,4 +47,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('product', ProductController::class);
     Route::resource('product_detail', ProductDetailController::class);
     Route::resource('katalog', KatalogController::class);
+    Route::resource('news', NewsController::class);
 });
