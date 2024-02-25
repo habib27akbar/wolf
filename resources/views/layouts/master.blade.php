@@ -7,7 +7,7 @@
     <title>WOLF | @yield('title')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicons -->
-    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('img/logo/logo-wolf-sementara.jpg') }}">
     <!-- Fontawesome css -->
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
     <!-- Animate css -->
