@@ -7,6 +7,8 @@ use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductDetailController;
 use App\Http\Controllers\ProductionController;
 use App\Http\Controllers\SliderController;
 
@@ -40,4 +42,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('contact', ContactController::class);
     Route::resource('production', ProductionController::class);
     Route::resource('certificate', CertificateController::class);
+    Route::resource('product', ProductController::class);
+    Route::resource('product_detail', ProductDetailController::class);
 });
