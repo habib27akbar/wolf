@@ -34,15 +34,45 @@
             </a>
            
           </li>
+
           <li class="nav-item">
-            <a href="{{ route('about.index') }}" class="nav-link {{ Route::currentRouteName() == 'about.index' ? 'active' : '' }}">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
-               About Us
+                About Us
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-           
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+               <a href="{{ route('about.index') }}" class="nav-link {{ Route::currentRouteName() == 'about.index' ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Our Profile</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../charts/flot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Our Production</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../charts/inline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Inline</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../charts/uplot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>uPlot</p>
+                </a>
+              </li>
+            </ul>
           </li>
+
+          
+
         
 
           <li class="nav-item">
@@ -50,6 +80,16 @@
               <i class="nav-icon fas fa-images"></i>
               <p>
                 Slider
+              </p>
+            </a>
+           
+          </li>
+
+          <li class="nav-item">
+            <a href="{{ route('contact.index') }}" class="nav-link {{ Route::currentRouteName() == 'contact.index' ? 'active' : '' }}">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+              Contact
               </p>
             </a>
            

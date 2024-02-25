@@ -38,7 +38,7 @@
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>No.</th>
+                    <th style="width: 20%">Action</th>
                     <th>Gambar</th>
                     
                   </tr>

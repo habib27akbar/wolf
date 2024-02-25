@@ -15,10 +15,10 @@ class CreateAbout extends Migration
     {
         Schema::create('about', function (Blueprint $table) {
             $table->id();
-            $table->string('ket');
-            $table->string('coq');
-            $table->string('misi');
-            $table->string('visi');
+            $table->text('ket');
+            $table->text('coq');
+            $table->text('misi');
+            $table->text('visi');
             $table->string('gambar')->nullable();
             $table->timestamps();
         });

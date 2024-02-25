@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\SliderController;
@@ -34,4 +35,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('slider', SliderController::class);
     Route::resource('kategori', KategoriController::class);
     Route::resource('about', AboutController::class);
+    Route::resource('contact', ContactController::class);
 });

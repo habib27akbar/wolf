@@ -13,11 +13,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>About Us</h1>
+            <h1>Contact</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">About Us</a></li>
+              <li class="breadcrumb-item"><a href="#">Contact</a></li>
               <li class="breadcrumb-item active">Edit</li>
             </ol>
           </div>
@@ -33,45 +33,62 @@
             <div class="card card-primary"> 
               <div class="card-body">
                  @include('include.alert')
-                 <form action="{{ route('about.update', ['about' => $about['id']]) }}" method="post" enctype="multipart/form-data">
+                 <form action="{{ route('contact.update', ['contact' => $contact['id']]) }}" method="post" enctype="multipart/form-data">
                      @csrf
                      @method('PUT')
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
+                            <label>Whatsapp</label>
                             <div class="form-group">
-                            
-                                <textarea id="summernote" name="ket">
-                                  {{ $about['ket'] }}
-                                </textarea>
+                                <input type="text" name="whatsapp" class="form-control" value="<?=$contact['whatsapp']?>">
                             </div>
                             <!-- /.form-group -->
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="form-group">
-                                <label>Control of Quality</label>
-                                <textarea id="coq" name="coq">
-                                    {{ $about['coq'] }}
-                                </textarea>
+                                <label>Telepon</label>
+                                <input type="text" name="telepon" class="form-control" value="<?=$contact['telepon']?>">
                             </div>
                             <!-- /.form-group -->
                         </div>
 
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label>Misi</label>
-                                <textarea id="misi" name="misi">
-                                    {{ $about['misi'] }}
-                                </textarea>
+                                <label>Alamat</label>
+                                <input type="text" name="alamat" class="form-control" value="<?=$contact['alamat']?>">
+                            </div>
+                            <!-- /.form-group -->
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Channel Youtube</label>
+                                <input type="text" name="youtube" class="form-control" value="<?=$contact['youtube']?>">
+                            </div>
+                            <!-- /.form-group -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Akun Facebook</label>
+                                <input type="text" name="facebook" class="form-control" value="<?=$contact['facebook']?>">
+                            </div>
+                            <!-- /.form-group -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Akun Instagram</label>
+                                <input type="text" name="instagram" class="form-control" value="<?=$contact['instagram']?>">
                             </div>
                             <!-- /.form-group -->
                         </div>
 
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label>Visi</label>
-                                <textarea id="visi" name="visi">
-                                    {{ $about['visi'] }}
+                                <label>Peta</label>
+                                <textarea name="peta" cols="140" rows="10" class="form-contol">
+                                    <?=$contact['peta']?>
                                 </textarea>
+                               
                             </div>
                             <!-- /.form-group -->
                         </div>
