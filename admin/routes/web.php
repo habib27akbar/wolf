@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CarrierController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
@@ -48,4 +49,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('product_detail', ProductDetailController::class);
     Route::resource('katalog', KatalogController::class);
     Route::resource('news', NewsController::class);
+    Route::resource('carrier', CarrierController::class);
 });

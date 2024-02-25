@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title','News')
+@section('title','Carrier')
 @section('css')
   <!-- summernote -->
   <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}">
@@ -11,12 +11,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>News</h1>
+            <h1>Carrier</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">News</a></li>
-              <li class="breadcrumb-item active">Create</li>
+              <li class="breadcrumb-item"><a href="#">Carrier</a></li>
+              <li class="breadcrumb-item active">Update</li>
             </ol>
           </div>
         </div>
@@ -29,41 +29,37 @@
         <div class="row">
           <div class="col-12">
             <div class="card card-primary"> 
-                <form action="{{ route('news.store') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('carrier.update', ['carrier' => $carrier['id']]) }}" method="post" enctype="multipart/form-data">
+                    @csrf
+                    @method('PUT')
                     <div class="card-body">
-                        @csrf
+                       
                          <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">Judul</label>
+                            <label for="file" class="col-sm-2 col-form-label">Pekerjaan</label>
                             <div class="col-sm-10">
-                                <input type="text" name="judul" id="judul" class="form-control" id="judul" required>
+                                <input type="text" name="judul" id="judul" class="form-control" id="judul" value="{{ $carrier['judul'] }}" required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="file" class="col-sm-2 col-form-label">Tanggal Posting</label>
                             <div class="col-sm-3">
-                                <input type="date" name="tanggal_posting" id="tanggal_posting" class="form-control" id="tanggal_posting" value="{{ date('Y-m-d') }}">
+                                <input type="date" name="tanggal_posting" id="tanggal_posting" class="form-control" id="tanggal_posting" value="{{ $carrier['tanggal_posting'] }}">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">Isi Berita</label>
+                            <label for="file" class="col-sm-2 col-form-label">Deskripsi</label>
                             <div class="col-sm-10">
-                                
-                               <textarea name="isi" id="summernote"></textarea>
+                               <textarea name="isi" id="summernote">
+                                {{ $carrier['isi'] }}
+                               </textarea>
                             </div>
                         </div>
                         
-                        <div class="form-group row">
-                            <label for="file" class="col-sm-2 col-form-label">Gambar</label>
-                            <div class="col-sm-10">
-                                <input type="file" name="image" id="image" class="form-control" id="file">
-                                <div class="alertSize" style="display: none;">File anda melebihi 5 MB</div>
-                                <div class="alert" style="display: none;">File anda Bukan gambar, tidak dapat diupload</div>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="card-footer">
                         <button id="btnSave" type="submit" class="btn btn-info">Simpan</button>
-                        <a href="{{ route('news.index') }}" class="btn btn-default">Batal</a>
+                        <a href="{{ route('carrier.index') }}" class="btn btn-default">Batal</a>
                     </div>
                 </form>
             </div>

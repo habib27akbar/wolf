@@ -60,7 +60,7 @@
                             <!-- /.form-group -->
                         </div>
 
-                        <div class="col-md-6">
+                        {{-- <div class="col-md-6">
                             <div class="form-group">
                                 <label>Channel Youtube</label>
                                 <input type="text" name="youtube" class="form-control" value="<?=$contact['youtube']?>">
@@ -80,7 +80,7 @@
                                 <input type="text" name="instagram" class="form-control" value="<?=$contact['instagram']?>">
                             </div>
                             <!-- /.form-group -->
-                        </div>
+                        </div> --}}
 
                         <div class="col-md-12">
                             <div class="form-group">
