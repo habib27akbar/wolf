@@ -51,23 +51,18 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../charts/flot.html" class="nav-link">
+                <a href="{{ route('production.index') }}" class="nav-link {{ Route::currentRouteName() == 'production.index' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Our Production</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../charts/inline.html" class="nav-link">
+                <a href="{{ route('certificate.index') }}" class="nav-link {{ Route::currentRouteName() == 'certificate.index' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
+                  <p>Our Certificate</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="../charts/uplot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>uPlot</p>
-                </a>
-              </li>
+             
             </ul>
           </li>
 

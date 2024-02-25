@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KategoriController;
@@ -38,4 +39,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('about', AboutController::class);
     Route::resource('contact', ContactController::class);
     Route::resource('production', ProductionController::class);
+    Route::resource('certificate', CertificateController::class);
 });
