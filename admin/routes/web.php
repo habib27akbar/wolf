@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CarrierController;
 use App\Http\Controllers\CertificateController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KatalogController;
@@ -50,4 +51,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('katalog', KatalogController::class);
     Route::resource('news', NewsController::class);
     Route::resource('carrier', CarrierController::class);
+    Route::resource('company', CompanyController::class);
 });

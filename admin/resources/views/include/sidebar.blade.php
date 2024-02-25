@@ -109,6 +109,16 @@
           </li>
 
           <li class="nav-item">
+            <a href="{{ route('company.index') }}" class="nav-link {{ Route::currentRouteName() == 'company.index' ? 'active' : '' }}">
+              <i class="nav-icon fas fa-building"></i>
+              <p>
+              Reference Company
+              </p>
+            </a>
+           
+          </li>
+
+          <li class="nav-item">
             <a href="{{ route('contact.index') }}" class="nav-link {{ Route::currentRouteName() == 'contact.index' ? 'active' : '' }}">
               <i class="nav-icon fas fa-users"></i>
               <p>
