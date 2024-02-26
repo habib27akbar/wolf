@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductionController;
+use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\CertificateController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +19,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::resource('profil', ProfilController::class);
+Route::resource('production', ProductionController::class);
+Route::resource('certificate', CertificateController::class);

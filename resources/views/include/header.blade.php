@@ -29,7 +29,7 @@
                                     </div>
                                     <div class="support-desc">
                                         <h6>Help & Support</h6>
-                                        <span>Call us : + 0123.4567.89</span>
+                                        <span>Call us : {{ $contact[0]->telepon }}</span>
                                     </div>
                                 </div>
                             </div>
@@ -43,6 +43,23 @@
                             <ul>
                                 <li>
                                     <a href="{{ route('home') }}">home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                    <!-- Women Accessories Dropdown Start -->
+                                    <ul>
+                                        <!-- Dress Dropdown Start -->
+                                        <li>
+                                            <ul>
+                                                <li><a href="#">Cords and Cables</a></li>
+                                                <li><a href="#">gps accessories</a></li>
+                                                <li><a href="#">Microphones</a></li>
+                                                <li><a href="#">Wireless Transmitters</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                    <!-- Women Accessories Dropdown Start -->
                                 </li>
                                 <li><a href="#">Product</a>
                                     <!-- Men Accessories Dropdown Start -->
@@ -90,22 +107,7 @@
                                     </ul>
                                     <!-- Men Accessories Dropdown End -->
                                 </li>
-                                <li><a href="#">About Us</a>
-                                    <!-- Women Accessories Dropdown Start -->
-                                    <ul>
-                                        <!-- Dress Dropdown Start -->
-                                        <li><a href="#">lamp</a>
-                                            <ul>
-                                                <li><a href="#">Cords and Cables</a></li>
-                                                <li><a href="#">gps accessories</a></li>
-                                                <li><a href="#">Microphones</a></li>
-                                                <li><a href="#">Wireless Transmitters</a></li>
-                                            </ul>
-                                        </li>
-                                        
-                                    </ul>
-                                    <!-- Women Accessories Dropdown Start -->
-                                </li>
+                                
                                 <li><a href="#">Support</a>
                                     <!-- Mobile Menu Dropdown Start -->
                                     <ul>
@@ -143,9 +145,9 @@
                                         <!-- Single Column Start -->
                                         <li>
                                             <ul>
-                                                <li><a href="">Our Profile</a></li>
-                                                <li><a href="#">Our Production</a></li>
-                                                <li><a href="#">Our Certificate</a></li>
+                                                <li><a href="{{ route('profil.index') }}">Our Profile</a></li>
+                                                <li><a href="{{ route('production.index') }}">Our Production</a></li>
+                                                <li><a href="{{ route('certificate.index') }}">Our Certificate</a></li>
                                                 
                                             </ul>
                                         </li>
