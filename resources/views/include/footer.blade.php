@@ -1,4 +1,5 @@
 <!-- Footer Area Start Here -->
+
 <footer class="black-bg footer-style-four pb-35">
     <div class="container">
         <!-- Footer Top Start -->
@@ -18,7 +19,7 @@
         <div class="footer-middle ptb-45">
             <div class="row">
                 <!-- Single Footer Start -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-6 mb-all-40">
+                <div class="col-xl-12 col-lg-12 col-md-6 col-12 mb-all-40">
                     <div class="single-footer">
                         <h3 class="footer-title">Address</h3>
                         <div class="footer-content">
@@ -38,11 +39,12 @@
                 </div>
                 <!-- Single Footer Start -->
                 <!-- Single Footer Start -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-6 mb-all-40">
+                {{-- <div class="col-xl-6 col-lg-6 col-md-6 col-6 mb-all-40">
                     <div class="single-footer style-change">
-                        <?=$contact[0]->peta?>
+                        
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15867.676330078582!2d106.822566!3d-6.1415716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e422331a8396667%3A0x671284d3cb18a5aa!2sPT.Dwitunggal%20Sinar%20Sentosa!5e0!3m2!1sid!2sid!4v1708848764054!5m2!1sid!2sid" style="border:0; width:100%" allowfullscreen="yes" loading="lazy" height="300" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </div>
+                </div> --}}
                 <!-- Single Footer Start -->
                 
                 

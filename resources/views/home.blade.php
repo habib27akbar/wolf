@@ -11,6 +11,14 @@
         
 
     }
+
+    .image-footer {
+        width: 30%;
+        aspect-ratio:16/20;
+        object-fit: contain;
+        
+
+    }
 </style>
 @endsection
 
@@ -194,8 +202,30 @@
                
             </div>
         </div>
+
+         {{-- <div class="social-link-area dark-white-bg ptb-55">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        
+                            <img src="{{ env('ASSET_URL_ADMIN') }}/img/bridgelux-0000-removebg-preview.jpg" class="image-footer" alt="" srcset="">
+                            <img src="{{ env('ASSET_URL_ADMIN') }}/img/creelogo-removebg-preview (1).jpg" class="image-footer" alt="" srcset="">
+                            <img src="{{ env('ASSET_URL_ADMIN') }}/img/index-removebg-preview.jpg" class="image-footer" alt="" srcset="">
+    
+                       
+                    </div>
+                    <div class="col-lg-6">
+                        
+                            <img src="{{ env('ASSET_URL_ADMIN') }}/img/Nichia_Logo.svg-removebg-preview.jpg" class="image-footer" alt="" srcset="">
+                            <img src="{{ env('ASSET_URL_ADMIN') }}/img/Philips_logo 2-removebg-preview.jpg" class="image-footer" alt="" srcset="">
+                            <img src="{{ env('ASSET_URL_ADMIN') }}/img/sanan-optoelectronics_416x416-removebg-preview-removebg-preview.jpg" class="image-footer" alt="" srcset="">
+                        
+                    </div>
+                </div>
+            </div>
+        </div> --}}
         <!-- New Arrival Products End Here -->
-       
+   
         
        
        
