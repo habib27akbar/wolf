@@ -62,47 +62,13 @@
                                 </li>
                                 <li><a href="#">Product</a>
                                     <!-- Men Accessories Dropdown Start -->
-                                    <ul class="submobile-mega-dropdown">
-                                        <li><a href="#">living</a>
-                                            <!-- Watches Dropdown Start -->
-                                            <ul>
-                                                <li><a href="#">sofa set</a></li>
-                                                <li><a href="#">corner table</a></li>
-                                                <li><a href="#">center table</a></li>
-                                                <li><a href="#">tv cabine</a></li>
-                                            </ul>
-                                            <!-- Watches Dropdown End -->
+                                    <ul class="submobile-dropdown">
+                                         @foreach($product as $key => $value)
+                                        <li>
+                                            <a href="{{ route('product.show',$value->id) }}">{{ $value['product_name'] }}</a>
+                                            
                                         </li>
-                                        <li><a href="#">bedroom</a>
-                                            <!-- Shoes Dropdown Start -->
-                                            <ul>
-                                                <li><a href="#">bed room sofa</a></li>
-                                                <li><a href="#">bed drawer</a></li>
-                                                <li><a href="#">bed side table</a></li>
-                                                <li><a href="#">dressing table</a></li>
-                                            </ul>
-                                            <!-- Shoes Dropdown End -->
-                                        </li>
-                                        <li><a href="#">dining</a>
-                                            <!-- Bags Dropdown Start -->
-                                            <ul>
-                                                <li><a href="#">Dining set</a></li>
-                                                <li><a href="#">chair</a></li>
-                                                <li><a href="#">showcase</a></li>
-                                                <li><a href="#">dinner wagon</a></li>
-                                            </ul>
-                                            <!-- Bags Dropdown End -->
-                                        </li>
-                                        <li><a href="#">office</a>
-                                            <!-- Bags Dropdown Start -->
-                                            <ul>
-                                                <li><a href="#">meeting table</a></li>
-                                                <li><a href="#">conference table</a></li>
-                                                <li><a href="#">mobile drawer</a></li>
-                                                <li><a href="#">group chair</a></li>
-                                            </ul>
-                                            <!-- Bags Dropdown End -->
-                                        </li>
+                                        @endforeach
                                     </ul>
                                     <!-- Men Accessories Dropdown End -->
                                 </li>
@@ -110,14 +76,14 @@
                                 <li><a href="#">Support</a>
                                     <!-- Mobile Menu Dropdown Start -->
                                     <ul>
-                                        <li><a href="#">Download E-Catalog</a></li>
+                                        <li><a href="{{ env('ASSET_URL_ADMIN') }}/img/katalog/{{ $katalog[0]->katalog }}">Download E-Catalog</a></li>
                                        
                                     </ul>
                                     <!-- Mobile Menu Dropdown End -->
                                 </li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="contact.html">Carrier</a></li>
-                                <li><a href="contact.html">contact us</a></li>
+                                <li><a href="{{ route('news.index') }}">News</a></li>
+                                
+                                <li><a href="{{ route('contact.index') }}">contact us</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -195,7 +161,7 @@
                                 
                                 
                                 <li>
-                                    <a  href="">Contact Us</a>
+                                    <a  href="{{ route('contact.index') }}">Contact Us</a>
                                     
                                 </li>
                                 
