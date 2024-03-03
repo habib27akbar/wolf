@@ -82,7 +82,7 @@
                             <!-- /.form-group -->
                         </div> --}}
 
-                        <div class="col-md-12">
+                        {{-- <div class="col-md-12">
                             <div class="form-group">
                                 <label>Peta</label>
                                 <textarea name="peta" cols="140" rows="10" class="form-contol">
@@ -91,7 +91,7 @@
                                
                             </div>
                             <!-- /.form-group -->
-                        </div>
+                        </div> --}}
                     </div>
                     <button class="btn btn-primary">Save</button>
                  </form>
