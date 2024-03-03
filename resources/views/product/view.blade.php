@@ -62,7 +62,7 @@
                         <div class="col-md-12">
                             <div class="pro-img">
                                 <center>
-                                    <img style="width: 30%" src="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $product_id['gambar'] }}" alt="product-img">
+                                    <img style="max-width: 50%" src="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $product_id['gambar'] }}" alt="product-img">
                                 </center>
                                 
                             </div>
