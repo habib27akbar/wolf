@@ -192,10 +192,7 @@
                                     
                                 </li>
 
-                                <li>
-                                    <a href="">Carrer</a>
-                                    
-                                </li>
+                                
                                 
                                 <li>
                                     <a  href="">Contact Us</a>
