@@ -69,7 +69,8 @@
                         </div>
 
                         <div class="col-md-12">
-                            <table id="example2" class="table table-bordered table-hover">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
                                 <thead>
                                 <tr>
                                    
@@ -127,6 +128,8 @@
                                     @endforeach
                                 </tbody>
                             </table>
+                            </div>
+                            
                         </div>
                     
                     
