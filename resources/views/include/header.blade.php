@@ -47,7 +47,7 @@
                                 <li>
                                     <a href="#">About Us</a>
                                     <!-- Women Accessories Dropdown Start -->
-                                    <ul>
+                                    <ul class="submobile-dropdown">
                                         <!-- Dress Dropdown Start -->
                                         <li>
                                             <ul>
