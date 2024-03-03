@@ -159,7 +159,7 @@
                                 <li>
                                     <a class="drop-icon" href="#">Product</a>
                                     <!--  Mega-Menu Start -->
-                                    <ul class="ht-dropdown megamenu big-megamneu">
+                                    <ul class="ht-dropdown">
                                         <!-- Single Column Start -->
                                         @foreach($product as $key => $value)
                                         <li>
