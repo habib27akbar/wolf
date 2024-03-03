@@ -10,6 +10,7 @@ use App\Models\Slider;
 use App\Models\Contact;
 use App\Models\Product;
 use App\Models\Production;
+use App\Models\Katalog;
 
 class CertificateController extends Controller
 {
@@ -23,7 +24,8 @@ class CertificateController extends Controller
         $product = Product::all();
         $company = Company::all();
         $about = About::all();
+        $katalog = Katalog::all();
 
-        return view('about_us.certificate.index', compact('slider', 'contact', 'certificate', 'production', 'product', 'company', 'about'));
+        return view('about_us.certificate.index', compact('slider', 'contact', 'certificate', 'production', 'product', 'company', 'about', 'katalog'));
     }
 }

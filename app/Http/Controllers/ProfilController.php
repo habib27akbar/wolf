@@ -10,6 +10,7 @@ use App\Models\Slider;
 use App\Models\Contact;
 use App\Models\Product;
 use App\Models\Production;
+use App\Models\Katalog;
 
 class ProfilController extends Controller
 {
@@ -23,7 +24,7 @@ class ProfilController extends Controller
         $product = Product::all();
         $company = Company::all();
         $about = About::all();
-
-        return view('about_us.profil.index', compact('slider', 'contact', 'certificate', 'production', 'product', 'company', 'about'));
+        $katalog = Katalog::all();
+        return view('about_us.profil.index', compact('slider', 'contact', 'certificate', 'production', 'product', 'company', 'about', 'katalog'));
     }
 }

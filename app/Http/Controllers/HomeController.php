@@ -10,6 +10,7 @@ use App\Models\Slider;
 use App\Models\Contact;
 use App\Models\Product;
 use App\Models\Production;
+use App\Models\Katalog;
 
 class HomeController extends Controller
 {
@@ -23,7 +24,8 @@ class HomeController extends Controller
         $product = Product::all();
         $company = Company::all();
         $about = About::all();
+        $katalog = Katalog::all();
 
-        return view('home', compact('slider', 'contact', 'certificate', 'production', 'product', 'company', 'about'));
+        return view('home', compact('slider', 'contact', 'certificate', 'production', 'product', 'company', 'about', 'katalog'));
     }
 }

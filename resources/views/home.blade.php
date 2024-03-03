@@ -141,15 +141,15 @@
                         <!-- Single Product Start Here -->
                         <div class="single-pander-product">
                             <div class="pro-img">
-                                <a href="#product_detail"><img src="admin/public/img/product/{{ $value->gambar }}" class="image" alt="product-img"></a>
+                                <a href="{{ route('product.show',$value->id) }}"><img src="admin/public/img/product/{{ $value->gambar }}" class="image" alt="product-img"></a>
                                
                                 <div class="quick-view-pro">
-                                    <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view" href="#"></a>
+                                    <a class="quick-view" href="{{ route('product.show',$value->id) }}"></a>
                                 </div>
                             </div>
                             <div class="pro-content">
                                
-                                <h4 class="pro-title"><a href="#product_detail">{{ $value['product_name'] }}</a></h4>
+                                <h4 class="pro-title"><a href="{{ route('product.show',$value->id) }}">{{ $value['product_name'] }}</a></h4>
                                 
                                 
                             </div>

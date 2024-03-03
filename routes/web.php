@@ -5,7 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductionController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\CertificateController;
-
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,5 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::resource('profil', ProfilController::class);
 Route::resource('production', ProductionController::class);
 Route::resource('certificate', CertificateController::class);
+Route::resource('product', ProductController::class);
+Route::resource('news', NewsController::class);

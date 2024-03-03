@@ -51,10 +51,9 @@
                                         <!-- Dress Dropdown Start -->
                                         <li>
                                             <ul>
-                                                <li><a href="#">Cords and Cables</a></li>
-                                                <li><a href="#">gps accessories</a></li>
-                                                <li><a href="#">Microphones</a></li>
-                                                <li><a href="#">Wireless Transmitters</a></li>
+                                                <li><a href="{{ route('profil.index') }}">Our Profile</a></li>
+                                                <li><a href="{{ route('production.index') }}">Our Production</a></li>
+                                                <li><a href="{{ route('certificate.index') }}">Our Certificate</a></li>
                                             </ul>
                                         </li>
                                         
@@ -160,52 +159,15 @@
                                 <li>
                                     <a class="drop-icon" href="#">Product</a>
                                     <!--  Mega-Menu Start -->
-                                    <ul class="ht-dropdown megamenu big-megamneu">
+                                    <ul class="ht-dropdown">
                                         <!-- Single Column Start -->
+                                        @foreach($product as $key => $value)
                                         <li>
-                                            <ul>
-                                                <li class="menu-tile">living</li>
-                                                <li><a href="#">sofa set</a></li>
-                                                <li><a href="#">corner table</a></li>
-                                                <li><a href="#">center table</a></li>
-                                                <li><a href="#">tv cabine</a></li>
-                                            </ul>
+                                            <a href="{{ route('product.show',$value->id) }}">{{ $value['product_name'] }}</a>
+                                            
                                         </li>
-                                        <!-- Single Column End -->
-                                        <!-- Single Column Start -->
-                                        <li>
-                                            <ul>
-                                                <li class="menu-tile">bedroom</li>
-                                                <li><a href="#">bed room sofa</a></li>
-                                                <li><a href="#">bed drawer</a></li>
-                                                <li><a href="#">bed side table</a></li>
-                                                <li><a href="#">dressing table</a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- Single Column End -->
-                                        <!-- Single Column Start -->
-                                        <li>
-                                            <ul>
-                                                <li class="menu-tile">Dining</li>
-                                                <li><a href="#">Dining set</a></li>
-                                                <li><a href="#">chair</a></li>
-                                                <li><a href="#">showcase</a></li>
-                                                <li><a href="#">dinner wagon</a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- Single Column End -->
-                                        <!-- Single Column Start -->
-                                        <li>
-                                            <ul>
-                                                <li class="menu-tile">office</li>
-                                                <li><a href="#">meeting table</a></li>
-                                                <li><a href="#">conference table</a></li>
-                                                <li><a href="#">mobile drawer</a></li>
-                                                <li><a href="#">group chair</a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- Single Column End -->
-
+                                        @endforeach
+                                        
                                     </ul>
                                     <!-- Mega-Menu End -->
                                 </li>
@@ -216,7 +178,7 @@
                                         <!-- Single Column Start -->
                                         <li>
                                             <ul>
-                                                <li><a href="">Download E-Catalog</a></li>
+                                                <li><a href="{{ env('ASSET_URL_ADMIN') }}/img/katalog/{{ $katalog[0]->katalog }}" target="_blank">Download E-Catalog</a></li>
                                             </ul>
                                         </li>
                                         <!-- Single Column End -->
@@ -226,17 +188,17 @@
                                     <!-- Mega-Menu End -->
                                 </li>
                                 <li>
-                                    <a  href="#">News</a>
+                                    <a href="{{ route('news.index') }}">News</a>
                                     
                                 </li>
 
                                 <li>
-                                    <a  href="#">Carrer</a>
+                                    <a href="">Carrer</a>
                                     
                                 </li>
                                 
                                 <li>
-                                    <a  href="#">Contact Us</a>
+                                    <a  href="">Contact Us</a>
                                     
                                 </li>
                                 
