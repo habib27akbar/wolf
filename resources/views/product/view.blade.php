@@ -69,9 +69,11 @@
                                 <div class="thumb-menu owl-carousel nav tabs-area" role="tablist">
                                     @foreach($product_image as $key => $value)
                         
-                                        <a>
+                                        <a href="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $value->gambar }}" target="_blank">
                                             <img class="image" src="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $value->gambar }}" alt="product-img">
                                         </a>
+
+                                        
                         
                             
                                     @endforeach
