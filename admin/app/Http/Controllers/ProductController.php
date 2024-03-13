@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductDetail;
+use App\Models\ProductImage;
 
 class ProductController extends Controller
 {
@@ -36,8 +37,9 @@ class ProductController extends Controller
         //dd($sejarah);
         $product = Product::findOrFail($id);
         $product_detail = ProductDetail::where('product_id', $id)->get();
+        $product_image = ProductImage::where('product_id', $id)->get();
 
-        return view('product.view', compact('product', 'product_detail'));
+        return view('product.view', compact('product', 'product_detail', 'product_image'));
     }
 
     public function store(Request $request)
