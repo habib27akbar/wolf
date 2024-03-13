@@ -12,6 +12,7 @@ use App\Models\Product;
 use App\Models\ProductDetail;
 use App\Models\Production;
 use App\Models\Katalog;
+use App\Models\ProductImage;
 
 class ProductController extends Controller
 {
@@ -41,6 +42,7 @@ class ProductController extends Controller
         $katalog = Katalog::all();
         $product_id = Product::findOrFail($id);
         $product_detail = ProductDetail::where('product_id', $id)->get();
-        return view('product.view', compact('slider', 'contact', 'certificate', 'production', 'product', 'company', 'about', 'katalog', 'product_id', 'product_detail'));
+        $product_image = ProductImage::where('product_id', $id)->get();
+        return view('product.view', compact('slider', 'contact', 'certificate', 'production', 'product', 'company', 'about', 'katalog', 'product_id', 'product_detail', 'product_image'));
     }
 }

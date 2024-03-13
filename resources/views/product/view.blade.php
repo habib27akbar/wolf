@@ -5,8 +5,8 @@
 @section('css')
 <style>
     .image {
-        width: 100%;
-        aspect-ratio:17/20;
+        width: 200%;
+        aspect-ratio:15/20;
         object-fit: contain;
         text-align: center;
 
@@ -60,12 +60,38 @@
                     ?>
                     
                         <div class="col-md-12">
-                            <div class="pro-img">
+                            <!-- Furniture Product Activation Start Here -->
+                            <div class="our-pro-active owl-carousel">
+
+                                <div class="single-pander-product">
+                                    <div class="pro-img">
+                                        <img src="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $product_id['gambar'] }}" class="image" alt="product-img">
+                                    </div>
+                                   
+                                </div>
+
+                                @foreach($product_image as $key => $value)
+                                <!-- Single Product Start Here -->
+                                <div class="single-pander-product">
+                                    <div class="pro-img">
+                                        <img src="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $value->gambar }}" class="image" alt="product-img">
+                                    
+                                       
+                                    </div>
+                                   
+                                </div>
+                                <!-- Single Product End Here -->
+                                @endforeach
+
+                            
+                            </div>
+                            <!-- Furniture Product Activation End Here -->
+                            {{-- <div class="pro-img">
                                 <center>
                                     <img style="max-width: 50%" src="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $product_id['gambar'] }}" alt="product-img">
                                 </center>
                                 
-                            </div>
+                            </div> --}}
                         </div>
 
                         <div class="col-md-12">
