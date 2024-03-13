@@ -5,120 +5,125 @@
 @section('css')
 <style>
     .image {
-        width: 200%;
-        aspect-ratio:15/20;
+        width: 100%;
+        aspect-ratio: 2/4;
         object-fit: contain;
         text-align: center;
 
     }
-
 </style>
 @endsection
 
-    <!-- Slider Area Start -->
-        <div class="slider-area">
-            <!-- Slider Area Start Here -->
-            <div class="slider-activation owl-carousel">
-                
-               
-                @foreach($slider as $key => $value)
-                    <!-- Start Single Slide -->
-                    <div class="slide align-center-left fullscreen animation-style-01 bg-image-1 " style="background: url('{{ env('ASSET_URL_ADMIN') }}/img/slider/{{ $value['gambar'] }}')no-repeat center center / cover">
-                        <div class="slider-progress"></div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="slider-content">
-                                    
-                                    </div>
-                                </div>
-                            </div>
+<!-- Slider Area Start -->
+<div class="slider-area">
+    <!-- Slider Area Start Here -->
+    <div class="slider-activation owl-carousel">
+
+
+        @foreach($slider as $key => $value)
+        <!-- Start Single Slide -->
+        <div class="slide align-center-left fullscreen animation-style-01 bg-image-1 " style="background: url('{{ env('ASSET_URL_ADMIN') }}/img/slider/{{ $value['gambar'] }}')no-repeat center center / cover">
+            <div class="slider-progress"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="slider-content">
+
                         </div>
                     </div>
-                    <!-- End Single Slide -->
-                @endforeach
-            </div>
-            <!-- Slider Area End Here -->
-        </div>
-        <!-- Slider Area End -->
-    
-       
-        
-        <!-- New Arrival Products Start Here -->
-        <div class="new-arrival no-border-style ptb-90">
-            <div class="container">
-                <!-- Section Title Start -->
-                <div class="section-title text-center">
-                    <h2>Product</h2>
-                    
                 </div>
-                <!-- Section Title End -->
-                <div class="row" style="">
-                    <?php 
-                    //var_dump($product_id['gambar']);
-                    //exit;    
-                    ?>
-                    
-                        <div class="col-md-12">
-                            <!-- Furniture Product Activation Start Here -->
-                            <div class="our-pro-active owl-carousel">
+            </div>
+        </div>
+        <!-- End Single Slide -->
+        @endforeach
+    </div>
+    <!-- Slider Area End Here -->
+</div>
+<!-- Slider Area End -->
 
-                                <div class="single-pander-product">
-                                    <div class="pro-img">
-                                        <img src="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $product_id['gambar'] }}" class="image" alt="product-img">
-                                    </div>
-                                   
-                                </div>
 
-                                @foreach($product_image as $key => $value)
-                                <!-- Single Product Start Here -->
-                                <div class="single-pander-product">
-                                    <div class="pro-img">
-                                        <img src="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $value->gambar }}" class="image" alt="product-img">
-                                    
-                                       
-                                    </div>
-                                   
-                                </div>
-                                <!-- Single Product End Here -->
-                                @endforeach
 
-                            
+        <div class="main-product-thumbnail white-bg ptb-90">
+            <div class="container">
+                <div class="row">
+                    <!-- Main Thumbnail Image Start -->
+                    <div class="col-lg-5 col-md-6 mb-all-40">
+                        <!-- Thumbnail Large Image start -->
+                        <div class="tab-content">
+                            <div id="thumb1" class="tab-pane fade show active">
+                                <a data-fancybox="images" href="img/products/p2.jpg"><img src="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $product_id['gambar'] }}" alt="product-img"></a>
                             </div>
-                            <!-- Furniture Product Activation End Here -->
-                            {{-- <div class="pro-img">
-                                <center>
-                                    <img style="max-width: 50%" src="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $product_id['gambar'] }}" alt="product-img">
-                                </center>
-                                
-                            </div> --}}
+                            
                         </div>
+                        <!-- Thumbnail Large Image End -->
+                        
+                    </div>
+                    <!-- Main Thumbnail Image End -->
+                    <!-- Thumbnail Description Start -->
+                    <div class="col-lg-7 col-md-6">
+                        <div class="thubnail-desc fix">
+                            <h3 class="product-header">{{ $product_id['product_name'] }}</h3>
+                            
+                            
+                            <div class="product-thumbnail">
+                                <div class="thumb-menu owl-carousel nav tabs-area" role="tablist">
+                                    @foreach($product_image as $key => $value)
+                        
+                                        <a>
+                                            <img class="image" src="{{ env('ASSET_URL_ADMIN') }}/img/product/{{ $value->gambar }}" alt="product-img">
+                                        </a>
+                        
+                            
+                                    @endforeach
 
-                        <div class="col-md-12">
-                            <div class="table-responsive">
+                                    
+                                </div>
+                            </div>
+                            <!-- Thumbnail image end -->
+                            
+                        </div>
+                    </div>
+                    <!-- Thumbnail Description End -->
+                </div>
+                <!-- Row End -->
+            </div>
+            <!-- Container End -->
+        </div>
+
+        <div class="thumnail-desc">
+            <div class="container">
+                <div class="thumb-desc-inner">
+                    <ul class="main-thumb-desc nav tabs-area" role="tablist">
+                        <li><a class="active" data-bs-toggle="tab" href="#dtail">Description</a></li>
+                      
+                    </ul>
+                    <!-- Product Thumbnail Tab Content Start -->
+                    <div class="tab-content thumb-content">
+                        <div id="dtail" class="tab-pane fade show active">
+                           <div class="table-responsive">
                                 <table class="table table-bordered table-hover">
-                                <thead>
-                                <tr>
-                                   
-                                    <th>Model</th>               
-                                    <th>Size</th>
-                                    <th>Lumens(LM)</th>
-                                    <th>Power(W)</th>
-                                    <th>LED Chip</th>
-                                    <th>Input Voltage(V)</th>
-                                    <th>Spec</th>
-                                    <th>Color Temp.</th>
-                                    <th>CRI</th>
-                                    <th>Driver</th>
-                                    <th>Quality Warranty</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach($product_detail as $key => $value)
+                                    <thead>
                                         <tr>
-                                            
+
+                                            <th>Model</th>
+                                            <th>Size</th>
+                                            <th>Lumens(LM)</th>
+                                            <th>Power(W)</th>
+                                            <th>LED Chip</th>
+                                            <th>Input Voltage(V)</th>
+                                            <th>Spec</th>
+                                            <th>Color Temp.</th>
+                                            <th>CRI</th>
+                                            <th>Driver</th>
+                                            <th>Quality Warranty</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach($product_detail as $key => $value)
+                                        <tr>
+
                                             <td>{{ $value->model }}</td>
-                                            
+
                                             <td>
                                                 {{ $value->size }}
                                             </td>
@@ -149,24 +154,23 @@
                                             <td>
                                                 {{ $value->quality_warranty }}
                                             </td>
-                                            
-                                        </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                            </div>
-                            
-                        </div>
-                    
-                    
-                    
-                </div>
-               
-            </div>
-        </div>
-        <!-- New Arrival Products End Here -->
 
-        <br/>
-        <br/>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Product Thumbnail Tab Content End -->
+                </div>
+            </div>
+            <!-- Container End -->
+        </div>
+
+
+<br />
+<br />
 
 @endsection
