@@ -13,6 +13,7 @@ use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductDetailController;
+use App\Http\Controllers\ProductImageController;
 use App\Http\Controllers\ProductionController;
 use App\Http\Controllers\SliderController;
 
@@ -52,4 +53,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('news', NewsController::class);
     Route::resource('carrier', CarrierController::class);
     Route::resource('company', CompanyController::class);
+    Route::resource('product_image', ProductImageController::class);
 });

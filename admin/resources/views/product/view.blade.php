@@ -48,81 +48,137 @@
                                  <img style="width:30%;" src="{{ asset('img/product/'.$product['gambar']) }}" alt="" srcset="">
                                 
                             </div>
+                            <a href="{{ url('product') }}" class="btn btn-default">Kembali</a>
                         </div>
+                       
                         @include('include.alert')
-                        <a href="{{ url('product_detail/create?product_id='.$product['id']) }}" class="btn btn-primary">Tambah</a>
-                        <a href="{{ url('product') }}" class="btn btn-default">Kembali</a>
-                        <div class="table-responsive">
-                             <table id="example2" class="table table-bordered table-hover">
-                            <thead>
-                            <tr>
-                                <th style="width: 20%">Action</th>
-                                <th>Model</th>               
-                                <th>Size</th>
-                                <th>Lumens(LM)</th>
-                                <th>Power(W)</th>
-                                <th>LED Chip</th>
-                                <th>Input Voltage(V)</th>
-                                <th>Spec</th>
-                                <th>Color Temp.</th>
-                                <th>CRI</th>
-                                <th>Driver</th>
-                                <th>Quality Warranty</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                                @foreach($product_detail as $key => $value)
-                                    <tr>
-                                        <td>
-                                            <div class="btn-group">
-                                                <form method="POST" action="{{ route('product_detail.destroy', ['product_detail' => $value->id]) }}">
-                                                    <a href="{{ route('product_detail.edit',$value->id) }}" class="btn btn-warning">Edit</a>
-                                                
-                                                    @method('DELETE')
-                                                    @csrf
-                                                    <input type="hidden" name="product_id" value="{{ $value->product_id }}">
-                                                    <button onclick="confirm('apakah anda yakin ?')" class="btn btn-danger">Delete</button>
-                                                </form>
-                                            </div>
-                                        </td>
-                                        <td>{{ $value->model }}</td>
-                                        
-                                        <td>
-                                            {{ $value->size }}
-                                        </td>
-                                        <td>
-                                            {{ $value->lumens }}
-                                        </td>
-                                        <td>
-                                            {{ $value->power }}
-                                        </td>
-                                        <td>
-                                            {{ $value->led_chip }}
-                                        </td>
-                                        <td>
-                                            {{ $value->input_voltage }}
-                                        </td>
-                                        <td>
-                                            {{ $value->spec }}
-                                        </td>
-                                        <td>
-                                            {{ $value->color_temp }}
-                                        </td>
-                                        <td>
-                                            {{ $value->cri }}
-                                        </td>
-                                        <td>
-                                            {{ $value->driver }}
-                                        </td>
-                                        <td>
-                                            {{ $value->quality_warranty }}
-                                        </td>
-                                        
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                        <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Detail Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Image</a>
+                            </li>
+                            
+                        </ul>
+                        <div class="tab-content" id="custom-tabs-four-tabContent">
+                            <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+                                <br/>
+                                <a href="{{ url('product_detail/create?product_id='.$product['id']) }}" class="btn btn-primary">Tambah</a>
+                               
+                                <div class="table-responsive">
+                                    <table id="example2" class="table table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th style="width: 20%">Action</th>
+                                            <th>Model</th>               
+                                            <th>Size</th>
+                                            <th>Lumens(LM)</th>
+                                            <th>Power(W)</th>
+                                            <th>LED Chip</th>
+                                            <th>Input Voltage(V)</th>
+                                            <th>Spec</th>
+                                            <th>Color Temp.</th>
+                                            <th>CRI</th>
+                                            <th>Driver</th>
+                                            <th>Quality Warranty</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach($product_detail as $key => $value)
+                                                <tr>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <form method="POST" action="{{ route('product_detail.destroy', ['product_detail' => $value->id]) }}">
+                                                                <a href="{{ route('product_detail.edit',$value->id) }}" class="btn btn-warning">Edit</a>
+                                                            
+                                                                @method('DELETE')
+                                                                @csrf
+                                                                <input type="hidden" name="product_id" value="{{ $value->product_id }}">
+                                                                <button onclick="confirm('apakah anda yakin ?')" class="btn btn-danger">Delete</button>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>{{ $value->model }}</td>
+                                                    
+                                                    <td>
+                                                        {{ $value->size }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $value->lumens }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $value->power }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $value->led_chip }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $value->input_voltage }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $value->spec }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $value->color_temp }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $value->cri }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $value->driver }}
+                                                    </td>
+                                                    <td>
+                                                        {{ $value->quality_warranty }}
+                                                    </td>
+                                                    
+                                                </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+                                <br/>
+                                <a href="{{ url('product_image/create?product_id='.$product['id']) }}" class="btn btn-primary">Tambah</a>
+                               
+                                <div class="table-responsive">
+                                    <table id="example1" class="table table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th style="width: 20%">Action</th>
+                                            <th>Image</th>               
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach($product_image as $key => $value)
+                                                <tr>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <form method="POST" action="{{ route('product_image.destroy', ['product_image' => $value->id]) }}">
+                                    
+                                                                @method('DELETE')
+                                                                @csrf
+                                                                <input type="hidden" name="product_id" value="{{ $value->product_id }}">
+                                                                <button onclick="confirm('apakah anda yakin ?')" class="btn btn-danger">Delete</button>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                         <img style="width:30%;" src="{{ asset('img/product/'.$value->gambar) }}" alt="" srcset="">
+                                                    </td>
+                                                    
+                                                   
+                                                    
+                                                </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
                         </div>
+                        
                        
                     </div>
                     
@@ -151,6 +207,16 @@
     <script src="{{ asset('plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
     <script>
     $(function () {
+
+        $('#example1').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": true,
+        "ordering": false,
+        "info": false,
+        "autoWidth": false,
+        "responsive": false,
+        });
         
         $('#example2').DataTable({
         "paging": true,

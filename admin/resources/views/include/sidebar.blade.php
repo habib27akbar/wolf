@@ -98,15 +98,7 @@
            
           </li>
 
-           <li class="nav-item">
-            <a href="{{ route('news.index') }}" class="nav-link {{ Route::currentRouteName() == 'news.index' ? 'active' : '' }}">
-              <i class="nav-icon fas fa-newspaper"></i>
-              <p>
-                News
-              </p>
-            </a>
            
-          </li>
 
           <li class="nav-item">
             <a href="{{ route('company.index') }}" class="nav-link {{ Route::currentRouteName() == 'company.index' ? 'active' : '' }}">
