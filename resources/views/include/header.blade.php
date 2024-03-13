@@ -49,21 +49,20 @@
                                     <!-- Women Accessories Dropdown Start -->
                                     <ul class="submobile-dropdown">
                                         <!-- Dress Dropdown Start -->
-                                        <li>
-                                            <ul>
-                                                <li><a href="{{ route('profil.index') }}">Our Profile</a></li>
-                                                <li><a href="{{ route('production.index') }}">Our Production</a></li>
-                                                <li><a href="{{ route('certificate.index') }}">Our Certificate</a></li>
-                                            </ul>
-                                        </li>
+                                        
+                                        <li><a href="{{ route('profil.index') }}">Our Profile</a></li>
+                                        <li><a href="{{ route('production.index') }}">Our Production</a></li>
+                                        <li><a href="{{ route('certificate.index') }}">Our Certificate</a></li>
+                                            
                                         
                                     </ul>
                                     <!-- Women Accessories Dropdown Start -->
                                 </li>
-                                <li><a href="#">Product</a>
+                                <li>
+                                    <a href="#">Product</a>
                                     <!-- Men Accessories Dropdown Start -->
                                     <ul class="submobile-dropdown">
-                                         @foreach($product as $key => $value)
+                                        @foreach($product as $key => $value)
                                         <li>
                                             <a href="{{ route('product.show',$value->id) }}">{{ $value['product_name'] }}</a>
                                             
@@ -81,7 +80,7 @@
                                     </ul>
                                     <!-- Mobile Menu Dropdown End -->
                                 </li>
-                                <li><a href="{{ route('news.index') }}">News</a></li>
+                               
                                 
                                 <li><a href="{{ route('contact.index') }}">contact us</a></li>
                             </ul>
@@ -153,11 +152,6 @@
                                     </ul>
                                     <!-- Mega-Menu End -->
                                 </li>
-                                <li>
-                                    <a href="{{ route('news.index') }}">News</a>
-                                    
-                                </li>
-
                                 
                                 
                                 <li>
