@@ -46,35 +46,32 @@
     
        
         
-        <!-- Best Selling Area Start Here -->
-        <div class="best-selling-pro deal-pro-style-one pt-90">
+        <div class="new-arrival no-border-style ptb-90">
             <div class="container">
-               <div class="section-title text-center">
-                    <h2>COMPANY PROFILE</h2>
+                <!-- Section Title Start -->
+                <div class="section-title text-center" style="margin-bottom: 0;">
+                    <h2>our reference company</h2>
                     
                 </div>
+                <!-- Section Title End -->
                 <div class="row">
-                    <div class="col-md-12">
-                        <?=$about[0]->ket?>
-                        <div style="margin-top: 10px">
-                            <b>CONTROL OF QUALITY</b>
-                            <?=$about[0]->coq?>
+                    @foreach($company as $key => $value)
+                        <div class="col-md-2">
+                            <div class="pro-img">
+                                <img src="admin/public/img/company/{{ $value['gambar'] }}" class="image" alt="client-logo">
+                                
+                            </div>
                         </div>
-                        <div style="margin-top: 10px">
-                            <b>Misi</b>
-                            <?=$about[0]->misi?>
-                            
-                        </div>
-                        <div style="margin-top: 10px">
-                            <b>Visi</b>
-                            <?=$about[0]->visi?>
-                        </div>
-                    </div>
+                    @endforeach
                     
                 </div>
+                
+                
+                       
+                    
+               
             </div>
         </div>
-        <!-- Best Selling Area End Here -->
         <br/>
         <br/>
 

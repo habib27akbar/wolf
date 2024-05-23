@@ -53,6 +53,7 @@
                                         <li><a href="{{ route('profil.index') }}">Our Profile</a></li>
                                         <li><a href="{{ route('production.index') }}">Our Production</a></li>
                                         <li><a href="{{ route('certificate.index') }}">Our Certificate</a></li>
+                                        <li><a href="{{ route('reference_company.index') }}">Our&nbsp;Reference&nbsp;Company</a></li>
                                             
                                         
                                     </ul>
@@ -112,6 +113,7 @@
                                                 <li><a href="{{ route('profil.index') }}">Our Profile</a></li>
                                                 <li><a href="{{ route('production.index') }}">Our Production</a></li>
                                                 <li><a href="{{ route('certificate.index') }}">Our Certificate</a></li>
+                                                <li><a href="{{ route('reference_company.index') }}">Our&nbsp;Reference&nbsp;Company</a></li>
                                                 
                                             </ul>
                                         </li>

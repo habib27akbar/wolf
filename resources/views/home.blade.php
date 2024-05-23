@@ -124,6 +124,13 @@
                     <h2>Certificate</h2>
                     
                 </div>
+                SERTIFIKAT YANG KAMI MILIKI ADALAH:
+                <ol>
+                    <li>CE</li>
+                    <li>ROHS</li>
+                    <li>UL</li>
+                    <li>Dan ISO 9001</li>
+                </ol>
                 <!-- Section Title End -->
                 <div class="row" style="">
                     {{-- @foreach($certificate as $key => $value)
