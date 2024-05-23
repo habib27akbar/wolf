@@ -58,7 +58,7 @@
         <div class="best-selling-pro deal-pro-style-one pt-90">
             <div class="container">
                <div class="section-title text-center">
-                    <h2>COMPANY PROFILE</h2>
+                    <h3>COMPANY PROFILE</h3>
                     
                 </div>
                 <div class="row">
@@ -95,9 +95,9 @@
                 <!-- Section Title End -->
                 <div class="row" style="">
                     @foreach($production as $key => $value)
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="pro-img">
-                                <img src="admin/public/img/production/{{ $value->gambar }}" alt="product-img">
+                                <img src="{{ asset('img/products/p1.jpg') }}" alt="product-img">
                             </div>
                         </div>
                      @endforeach  
@@ -120,14 +120,21 @@
                 </div>
                 <!-- Section Title End -->
                 <div class="row" style="">
-                    @foreach($certificate as $key => $value)
+                    {{-- @foreach($certificate as $key => $value)
                         <div class="col-md-3">
                             <div class="pro-img">
-                                <img src="admin/public/img/certificate/{{ $value->gambar }}" alt="product-img">
+                                <img src="{{ asset('img/products/p1.jpg') }}" alt="product-img">
                             </div>
                         </div>
-                     @endforeach  
+                     @endforeach   --}}
                     
+                     @for ($i = 1; $i <= 4; $i++)
+                         <div class="col-md-3">
+                            <div class="pro-img">
+                                <img src="{{ asset('img/products/p1.jpg') }}" alt="product-img">
+                            </div>
+                        </div>
+                     @endfor
                     
                 </div>
                
