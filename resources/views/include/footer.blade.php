@@ -19,20 +19,21 @@
         <div class="footer-middle ptb-45">
             <div class="row">
                 <!-- Single Footer Start -->
-                <div class="col-xl-12 col-lg-12 col-md-6 col-12 mb-all-40">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-all-40">
                     <div class="single-footer">
                         <h3 class="footer-title">Address</h3>
                         <div class="footer-content">
+                            <p class="footer-title">PT. DWI TUNGGAL SINAR SENTOSA</p>
                             <ul class="footer-list last-footer">
                                 <li class="list-upper">
                                    <p>{{ $contact[0]->alamat }}</p>
                                 </li>
                                 <li>
-                                    <p>Call : <span> {{ $contact[0]->telepon }}</span></p>
+                                    <p>Telp : <span>021-625 9824</span></p>
                                 </li>
-                                <li>
+                                {{-- <li>
                                     <p>Whatsapp : <span>{{ $contact[0]->whatsapp }}</span></p>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>
@@ -54,14 +55,12 @@
         <!-- Footer Middle End -->
         <!-- Footer Bottom Start -->
         <div class="footer-bottom pt-35">
-            <div class="d-flex flex-wrap justify-content-md-between justify-content-center footer-bottom-content">
+            <div class="" style="justify-content:center;">
                 <div class="footer-copyright mb-sm-15">
-                    <p>Wolfs 2024</p>
+                    <p style="text-align: center">Wolfs 2024</p>
                     {{-- <p>Powered By Pander template</p> --}}
                 </div>
-                <div class="footer-payment">
-                    {{-- <a href="#"><img src="img/payment/payment.png" alt="payment-img" class="img"></a> --}}
-                </div>
+               
             </div>
         </div>
         <!-- Footer Bottom End -->

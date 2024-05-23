@@ -94,14 +94,20 @@
                 </div>
                 <!-- Section Title End -->
                 <div class="row" style="">
-                    @foreach($production as $key => $value)
-                        <div class="col-md-4">
+                    {{-- @foreach($production as $key => $value)
+                        <div class="col-md-3">
                             <div class="pro-img">
-                                <img src="{{ asset('img/products/p1.jpg') }}" alt="product-img">
+                                <img src="admin/public/img/production/{{ $value->gambar }}" alt="product-img">
                             </div>
                         </div>
-                     @endforeach  
-                    
+                     @endforeach   --}}
+                    @for ($i = 1; $i <= 4; $i++)
+                         <div class="col-md-3">
+                            <div class="pro-img">
+                                <img src="{{ asset('img/products/p1.jpg') }}" class="imgage" alt="product-img">
+                            </div>
+                        </div>
+                     @endfor
                     
                 </div>
                
@@ -123,18 +129,19 @@
                     {{-- @foreach($certificate as $key => $value)
                         <div class="col-md-3">
                             <div class="pro-img">
-                                <img src="{{ asset('img/products/p1.jpg') }}" alt="product-img">
+                                <img src="admin/public/img/certificate/{{ $value->gambar }}" alt="product-img">
                             </div>
                         </div>
                      @endforeach   --}}
-                    
+
                      @for ($i = 1; $i <= 4; $i++)
                          <div class="col-md-3">
                             <div class="pro-img">
-                                <img src="{{ asset('img/products/p1.jpg') }}" alt="product-img">
+                                <img src="{{ asset('img/products/p1.jpg') }}" class="imgage" alt="product-img">
                             </div>
                         </div>
                      @endfor
+                    
                     
                 </div>
                
