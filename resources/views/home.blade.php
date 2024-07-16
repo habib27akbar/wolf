@@ -84,7 +84,7 @@
         </div>
         <!-- Best Selling Area End Here -->
 
-        <!-- New Arrival Products Start Here -->
+         <!-- New Arrival Products Start Here -->
         <div class="new-arrival no-border-style ptb-90">
             <div class="container">
                 <!-- Section Title Start -->
@@ -94,20 +94,20 @@
                 </div>
                 <!-- Section Title End -->
                 <div class="row" style="">
-                    {{-- @foreach($production as $key => $value)
+                    @foreach($production as $key => $value)
                         <div class="col-md-3">
                             <div class="pro-img">
-                                <img src="admin/public/img/production/{{ $value->gambar }}" alt="product-img">
+                                <img class="image" src="admin/public/img/production/{{ $value->gambar }}" alt="product-img">
                             </div>
                         </div>
-                     @endforeach   --}}
-                    @for ($i = 1; $i <= 4; $i++)
+                     @endforeach  
+                    {{-- @for ($i = 1; $i <= 4; $i++)
                          <div class="col-md-3">
                             <div class="pro-img">
                                 <img src="{{ asset('img/products/p1.jpg') }}" class="imgage" alt="product-img">
                             </div>
                         </div>
-                     @endfor
+                     @endfor --}}
                     
                 </div>
                
@@ -133,21 +133,21 @@
                 </ol>
                 <!-- Section Title End -->
                 <div class="row" style="">
-                    {{-- @foreach($certificate as $key => $value)
+                    @foreach($certificate as $key => $value)
                         <div class="col-md-3">
                             <div class="pro-img">
-                                <img src="admin/public/img/certificate/{{ $value->gambar }}" alt="product-img">
+                                <img class="image" src="admin/public/img/certificate/{{ $value->gambar }}" alt="product-img">
                             </div>
                         </div>
-                     @endforeach   --}}
+                     @endforeach  
 
-                     @for ($i = 1; $i <= 4; $i++)
+                     {{-- @for ($i = 1; $i <= 4; $i++)
                          <div class="col-md-3">
                             <div class="pro-img">
                                 <img src="{{ asset('img/products/p1.jpg') }}" class="imgage" alt="product-img">
                             </div>
                         </div>
-                     @endfor
+                     @endfor --}}
                     
                     
                 </div>
