@@ -32,13 +32,13 @@
                                     <p>Telp : <span>021-625 9824</span></p>
                                 </li>
                                 <li>
-                                    Whatsapp : <a href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">08561400089</a>
+                                    <p>Whatsapp : <a href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">08561400089</a></p>
                                 </li>
                                 <li>
-                                    IG : sinarsentosa
+                                    <p>IG : sinarsentosa</p>
                                 </li>
-                                <li>Email : dwitunggalsinarsentosa@gmail.com</li>
-                                <li>Marketing : Lucky Maulana 082311111165</li>
+                                <li><p>Email : dwitunggalsinarsentosa@gmail.com</p></li>
+                                <li><p>Marketing : Lucky Maulana 082311111165</p></li>
 
                                 
                                 {{-- <li>
