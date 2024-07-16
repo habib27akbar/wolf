@@ -6,7 +6,7 @@
 <style>
     .image {
         width: 100%;
-        aspect-ratio:17/20;
+        aspect-ratio:18/20;
         object-fit: contain;
         
 
@@ -27,20 +27,20 @@
                 </div>
                 <!-- Section Title End -->
                 <div class="row" style="">
-                    {{-- @foreach($production as $key => $value)
+                    @foreach($production as $key => $value)
                         <div class="col-md-3">
                             <div class="pro-img">
-                                <img src="admin/public/img/production/{{ $value->gambar }}" alt="product-img">
+                                <img class="image" src="admin/public/img/production/{{ $value->gambar }}" alt="product-img">
                             </div>
                         </div>
-                     @endforeach   --}}
-                    @for ($i = 1; $i <= 4; $i++)
+                     @endforeach  
+                    {{-- @for ($i = 1; $i <= 4; $i++)
                          <div class="col-md-3">
                             <div class="pro-img">
                                 <img src="{{ asset('img/products/p1.jpg') }}" class="imgage" alt="product-img">
                             </div>
                         </div>
-                     @endfor
+                     @endfor --}}
                     
                 </div>
                

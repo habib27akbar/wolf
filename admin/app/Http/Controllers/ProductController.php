@@ -53,15 +53,15 @@ class ProductController extends Controller
         //$image = $request->file('image')->store('images');
         $storeData = [
             'product_name' => $request->input('product_name'),
-            'model' => $request->input('model'),
-            'size' => $request->input('size'),
-            'lumens' => $request->input('lumens'),
-            'power' => $request->input('power'),
-            'spec' => $request->input('spec'),
-            'color_temp' => $request->input('color_temp'),
-            'cri' => $request->input('cri'),
-            'driver' => $request->input('driver'),
-            'quality_warranty' => $request->input('quality_warranty'),
+            // 'model' => $request->input('model'),
+            // 'size' => $request->input('size'),
+            // 'lumens' => $request->input('lumens'),
+            // 'power' => $request->input('power'),
+            // 'spec' => $request->input('spec'),
+            // 'color_temp' => $request->input('color_temp'),
+            // 'cri' => $request->input('cri'),
+            // 'driver' => $request->input('driver'),
+            // 'quality_warranty' => $request->input('quality_warranty'),
             'gambar' => $nama_image,
             //'status' => 1
         ];
@@ -82,15 +82,15 @@ class ProductController extends Controller
         }
         $updateData = [
             'product_name' => $request->input('product_name'),
-            'model' => $request->input('model'),
-            'size' => $request->input('size'),
-            'lumens' => $request->input('lumens'),
-            'power' => $request->input('power'),
-            'spec' => $request->input('spec'),
-            'color_temp' => $request->input('color_temp'),
-            'cri' => $request->input('cri'),
-            'driver' => $request->input('driver'),
-            'quality_warranty' => $request->input('quality_warranty'),
+            // 'model' => $request->input('model'),
+            // 'size' => $request->input('size'),
+            // 'lumens' => $request->input('lumens'),
+            // 'power' => $request->input('power'),
+            // 'spec' => $request->input('spec'),
+            // 'color_temp' => $request->input('color_temp'),
+            // 'cri' => $request->input('cri'),
+            // 'driver' => $request->input('driver'),
+            // 'quality_warranty' => $request->input('quality_warranty'),
             'gambar' => $nama_image,
 
         ];
