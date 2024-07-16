@@ -1,5 +1,7 @@
 <!-- Footer Area Start Here -->
-
+<style>
+    p{text-transform: none}
+</style>
 <footer class="black-bg footer-style-four pb-35">
     <div class="container">
         <!-- Footer Top Start -->
@@ -23,22 +25,65 @@
                     <div class="single-footer">
                         <h3 class="footer-title">Address</h3>
                         <div class="footer-content">
-                            <p class="footer-title">PT. DWI TUNGGAL SINAR SENTOSA</p>
+                            <p class="footer-title">PT. DWITUNGGAL SINAR SENTOSA</p>
                             <ul class="footer-list last-footer">
                                 <li class="list-upper">
                                    <p>{{ $contact[0]->alamat }}</p>
                                 </li>
+                               
+
+                                
+                                {{-- <li>
+                                    <p>Whatsapp : <span>{{ $contact[0]->whatsapp }}</span></p>
+                                </li> --}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Footer Start -->
+
+                <!-- Single Footer Start -->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-all-40">
+                    <div class="single-footer">
+                        <h3 class="footer-title">Contact US</h3>
+                        <div class="footer-content">
+                            
+                            <ul class="footer-list last-footer">
+                               
                                 <li>
-                                    <p>Telp : 021-625 9824</p>
+                                    <p style="text-transform: none">Telp : 021-625 9824</p>
                                 </li>
                                 <li>
-                                    <p>Whatsapp : 08561400089</p>
+                                    <p>Whatsapp : <a href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">08561400089</a></p>
                                 </li>
                                 <li>
-                                    <p>IG : sinarsentosa</p>
+                                    <p style="text-transform: none">IG : wolfz.id</p>
                                 </li>
-                                <li><p>Email : dwitunggalsinarsentosa@gmail.com</p></li>
-                                <li><p>Marketing : Lucky Maulana 082311111165</p></li>
+                                <li><p style="text-transform: none">Email : dwitunggalsinarsentosa@gmail.com</p></li>
+                                {{-- <li><p style="text-transform: none">Marketing 1: <br/>Oki Hartanto<br/>+62 877 7139 0210</p></li>
+                                <li><p style="text-transform: none">Marketing 2: <br/>Lucky Maulana<br/>+62 8231 111 1165</p></li> --}}
+
+                                
+                                {{-- <li>
+                                    <p>Whatsapp : <span>{{ $contact[0]->whatsapp }}</span></p>
+                                </li> --}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Footer Start -->
+
+                <!-- Single Footer Start -->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-all-40">
+                    <div class="single-footer">
+                        <h3 class="footer-title"></h3>
+                        <div class="footer-content">
+                            
+                            <ul class="footer-list last-footer">
+                               
+                                
+                                <li><p style="text-transform: none">Marketing 1: <br/>Oki Hartanto<br/>+62 877 7139 0210</p></li>
+                                <li><p style="text-transform: none">Marketing 2: <br/>Lucky Maulana<br/>+62 8231 111 1165</p></li>
 
                                 
                                 {{-- <li>
@@ -67,7 +112,7 @@
         <div class="footer-bottom pt-35">
             <div class="" style="justify-content:center;">
                 <div class="footer-copyright mb-sm-15">
-                    <p style="text-align: center">Wolfs 2024</p>
+                    <p style="text-align: center">PT Dwitunggal  Sinar Sentosa @ 2011. All Rights Reserved</p>
                     {{-- <p>Powered By Pander template</p> --}}
                 </div>
                

@@ -29,7 +29,7 @@
                                     </div>
                                     <div class="support-desc">
                                         <h6>Help & Support</h6>
-                                        <span>Call us : {{ $contact[0]->telepon }}</span>
+                                        <span>Call us : 021-625 9824</span>
                                     </div>
                                 </div>
                             </div>
