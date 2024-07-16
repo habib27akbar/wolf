@@ -32,7 +32,7 @@
                                     <p>Telp : <span>021-625 9824</span></p>
                                 </li>
                                 <li>
-                                    <p>Whatsapp : <a href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">08561400089</a></p>
+                                    <p>Whatsapp : 08561400089</p>
                                 </li>
                                 <li>
                                     <p>IG : sinarsentosa</p>
