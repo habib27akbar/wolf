@@ -105,15 +105,15 @@
                                         <td>Whatsapp</td>
                                         <td>:</td>
                                         <td>
-                                            <a href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">
-                                            08561400089
+                                            <a style="color: black;" href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">
+                                            +62 856 1400 089
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>IG</td>
                                         <td>:</td>
-                                        <td>sinarsentosa</td>
+                                        <td>wolfz.id</td>
                                     </tr>
                                     <tr>
                                         <td>Email</td>
@@ -121,9 +121,15 @@
                                         <td>dwitunggalsinarsentosa@gmail.com</td>
                                     </tr>
                                     <tr>
-                                        <td>Marketing</td>
+                                        <td>Marketing 1</td>
                                         <td>:</td>
-                                        <td>Lucky Maulana 082311111165</td>
+                                        <td>Oki Hartanto +62 877 7139 0210</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Marketing 2</td>
+                                        <td>:</td>
+                                        <td>Lucky Maulana +62 8231 111 1165</td>
                                     </tr>
                                 </table>
                                 
