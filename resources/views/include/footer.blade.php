@@ -54,7 +54,7 @@
                                     <p style="text-transform: none">Telp : 021-625 9824</p>
                                 </li>
                                 <li>
-                                    <p>Whatsapp : <a href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">08561400089</a></p>
+                                    <p>Whatsapp : <a style="display: inline-block; color:white" href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">+62 856 1400 089</a></p>
                                 </li>
                                 <li>
                                     <p style="text-transform: none">IG : wolfz.id</p>
