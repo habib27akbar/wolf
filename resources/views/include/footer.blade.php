@@ -29,7 +29,7 @@
                                    <p>{{ $contact[0]->alamat }}</p>
                                 </li>
                                 <li>
-                                    <p>Telp : <span>021-625 9824</span></p>
+                                    <p>Telp : 021-625 9824</p>
                                 </li>
                                 <li>
                                     <p>Whatsapp : 08561400089</p>
