@@ -105,7 +105,7 @@
                                         <td>Whatsapp</td>
                                         <td>:</td>
                                         <td>
-                                            <a style="color: black;" href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">
+                                            <a href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">
                                             +62 856 1400 089
                                             </a>
                                         </td>
