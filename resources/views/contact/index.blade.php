@@ -120,6 +120,11 @@
                                         <td>:</td>
                                         <td>dwitunggalsinarsentosa@gmail.com</td>
                                     </tr>
+                                    <tr>
+                                        <td>Marketing</td>
+                                        <td>:</td>
+                                        <td>Lucky Maulana 082311111165</td>
+                                    </tr>
                                 </table>
                                 
                             </div>
