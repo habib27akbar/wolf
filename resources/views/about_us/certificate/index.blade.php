@@ -14,36 +14,11 @@
 </style>
 @endsection
 
-    <!-- Slider Area Start -->
-        <div class="slider-area">
-            <!-- Slider Area Start Here -->
-            <div class="slider-activation owl-carousel">
-                
-               
-                @foreach($slider as $key => $value)
-                    <!-- Start Single Slide -->
-                    <div class="slide align-center-left fullscreen animation-style-01 bg-image-1 " style="background: url('admin/public/img/slider/{{ $value['gambar'] }}')no-repeat center center / cover">
-                        <div class="slider-progress"></div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="slider-content">
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Slide -->
-                @endforeach
-            </div>
-            <!-- Slider Area End Here -->
-        </div>
-        <!-- Slider Area End -->
+    
     
        
         
-        <!-- New Arrival Products Start Here -->
+       <!-- New Arrival Products Start Here -->
         <div class="new-arrival no-border-style ptb-90">
             <div class="container">
                 <!-- Section Title Start -->
@@ -51,15 +26,30 @@
                     <h2>Certificate</h2>
                     
                 </div>
+                SERTIFIKAT YANG KAMI MILIKI ADALAH:
+                <ol>
+                    <li>CE</li>
+                    <li>ROHS</li>
+                    <li>UL</li>
+                    <li>Dan ISO 9001</li>
+                </ol>
                 <!-- Section Title End -->
                 <div class="row" style="">
-                    @foreach($certificate as $key => $value)
+                    {{-- @foreach($certificate as $key => $value)
                         <div class="col-md-3">
                             <div class="pro-img">
                                 <img src="admin/public/img/certificate/{{ $value->gambar }}" alt="product-img">
                             </div>
                         </div>
-                     @endforeach  
+                     @endforeach   --}}
+
+                     @for ($i = 1; $i <= 4; $i++)
+                         <div class="col-md-3">
+                            <div class="pro-img">
+                                <img src="{{ asset('img/products/p1.jpg') }}" class="imgage" alt="product-img">
+                            </div>
+                        </div>
+                     @endfor
                     
                     
                 </div>
