@@ -28,10 +28,10 @@
                 </div>
                 SERTIFIKAT YANG KAMI MILIKI ADALAH:
                 <ol>
-                    <li>CE</li>
+                    <li>ISO 9001</li>
                     <li>ROHS</li>
                     <li>UL</li>
-                    <li>Dan ISO 9001</li>
+                    <li>Dan CE</li>
                 </ol>
                 <!-- Section Title End -->
                 <div class="row" style="">
