@@ -38,7 +38,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <div class="slider-content">
+                                    <div class="slider-content" style="height: 200px;">
                                     
                                     </div>
                                 </div>
