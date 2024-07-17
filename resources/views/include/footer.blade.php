@@ -57,16 +57,12 @@
                                     <p>Whatsapp : <a style="display: inline-block; color:white" href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">+62 856 1400 089</a></p>
                                 </li>
                                 <li>
-                                    <p style="text-transform: none">IG : wolfz.id</p>
+                                    <p style="text-transform: none"><a style="display: inline-block; color:white;" href="https://www.instagram.com/wolfz.id/">IG : wolfz.indo</a></p>
                                 </li>
-                                <li><p style="text-transform: none">Email : dwitunggalsinarsentosa@gmail.com</p></li>
-                                {{-- <li><p style="text-transform: none">Marketing 1: <br/>Oki Hartanto<br/>+62 877 7139 0210</p></li>
-                                <li><p style="text-transform: none">Marketing 2: <br/>Lucky Maulana<br/>+62 8231 111 1165</p></li> --}}
+                                <li><p style="text-transform: none">Email : <a style="display: inline-block; color:white;" href="mailto:dwitunggalsinarsentosa@gmail.com">dwitunggalsinarsentosa@gmail.com</a></p></li>
+                                
 
                                 
-                                {{-- <li>
-                                    <p>Whatsapp : <span>{{ $contact[0]->whatsapp }}</span></p>
-                                </li> --}}
                             </ul>
                         </div>
                     </div>
@@ -74,7 +70,7 @@
                 <!-- Single Footer Start -->
 
                 <!-- Single Footer Start -->
-                <div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-all-40">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-3 mb-all-40">
                     <div class="single-footer">
                         <h3 class="footer-title"></h3>
                         <div class="footer-content">
@@ -82,13 +78,33 @@
                             <ul class="footer-list last-footer">
                                
                                 
-                                <li><p style="text-transform: none">Marketing 1: <br/>Oki Hartanto<br/>+62 877 7139 0210</p></li>
-                                <li><p style="text-transform: none">Marketing 2: <br/>Lucky Maulana<br/>+62 8231 111 1165</p></li>
+                                <li><p style="text-transform: none">Marketing 1: <br/>Oki Hartanto<br/><a style="display: inline-block; color:white" href="https://api.whatsapp.com/send?phone=+6287771390210&text=Saya%20ingin%20bertanya." target="_blank">+62 877 7139 0210</a></p></li>
+                                <li><p style="text-transform: none">Marketing 2: <br/>Lucky Maulana<br/><a style="display: inline-block; color:white" href="https://api.whatsapp.com/send?phone=+6282311111165&text=Saya%20ingin%20bertanya." target="_blank">+62 8231 111 1165</a></p></li>
 
                                 
-                                {{-- <li>
-                                    <p>Whatsapp : <span>{{ $contact[0]->whatsapp }}</span></p>
-                                </li> --}}
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-1 mb-all-40">
+                    <div class="single-footer">
+                        <h3 class="footer-title"></h3>
+                        <div class="footer-content">
+                            
+                            <ul class="footer-list last-footer">
+                               
+                                
+                               
+                                <li>
+                                   <a style="display: inline-block; color:white" href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">
+                                         <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+                                   </a>
+                                   <a style="display: inline-block; color:white; margin-left:5px" target="_blank" href="https://www.instagram.com/wolfz.indo/">
+                                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

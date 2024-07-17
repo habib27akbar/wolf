@@ -85,7 +85,7 @@
                                     <tr>
                                         <td>IG</td>
                                         <td>:</td>
-                                        <td>wolfz.id</td>
+                                        <td>wolfz.indo</td>
                                     </tr>
                                     <tr>
                                         <td>Email</td>

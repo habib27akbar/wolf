@@ -16,7 +16,7 @@
                         <!-- Logo Start -->
                         <div class="col-xl-6 col-lg-4 col-md-5 col-sm-12 order-1 order-lg-2">
                             <div class="logo text-center text-md-start text-lg-center mt-sm-35">
-                                <a href="index.html"><img src="{{ asset('img/logo/logo-wolf-sementara.jpg') }}" alt="logo-image"></a>
+                                <a href="{{ route('home') }}"><img src="{{ asset('img/logo/logo-wolf-sementara.jpg') }}" alt="logo-image"></a>
                             </div>
                         </div>
                         <!-- Logo End -->
@@ -31,8 +31,10 @@
                                         <h6>Help & Support</h6>
                                         <span>Call us : 021-625 9824</span>
                                     </div>
+                                    
                                 </div>
                             </div>
+                            
                         </div>
                         <!-- Cart Box End Here -->
                     </div>
@@ -160,9 +162,23 @@
                                     <a  href="{{ route('contact.index') }}">Contact Us</a>
                                     
                                 </li>
+
+                                <li style="position: relative; left:230px;">
+                                   <a style="padding:16px 4px 15px" href="https://api.whatsapp.com/send?phone=+628561400089&text=Saya%20ingin%20bertanya." target="_blank">
+                                         <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+                                   </a>
+                                </li>
+
+                                <li style="position: relative; left:230px;">
+                                    <a style="padding:16px 4px 15px" href="https://www.instagram.com/wolfz.indo/" target="_blank">
+                                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                                    </a>
+                                </li>
                                 
                             </ul>
+                            
                         </nav>
+                       
                     </div>
                 </div>
                 <!-- Row End -->
