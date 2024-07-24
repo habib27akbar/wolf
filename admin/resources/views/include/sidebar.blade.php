@@ -110,7 +110,7 @@
            
           </li>
 
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a href="{{ route('contact.index') }}" class="nav-link {{ Route::currentRouteName() == 'contact.index' ? 'active' : '' }}">
               <i class="nav-icon fas fa-users"></i>
               <p>
@@ -118,7 +118,7 @@
               </p>
             </a>
            
-          </li>
+          </li> --}}
           
         </ul>
       </nav>
